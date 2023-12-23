@@ -18,7 +18,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import torch.optim as optim
-import torch.nn.functional as F
+import torch.nn.functional as 
 from statistics import mean
 import matplotlib.pyplot as plt
 from torch.nn.utils.rnn import pad_sequence
@@ -723,7 +723,7 @@ if True:
 
     end_time = time.time()  # End time of the epoch
     epoch_duration = end_time - start_time  # Calculate duration
-    collectorA[f"{kind} {rep}"] = A
+    collectorA[f"{kind}_rep_{rep}_min_{min_len} max_{max_len}"] = AC
     torch.save(model, f'model_{kind}_min_{min_len}_max_{max_len}_rep_{rep}.model')
     print(f"{kind:<20} Rep: {rep:<3} Epoch: {len(A):<5} Acc: {avg_acc:.4f} " f"_min_{min_len}_max_{max_len} Time: {epoch_duration:.2f} sec")
     df=DataFrame()
