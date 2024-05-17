@@ -1,1 +1,3 @@
-/dataModelsSongs
+# Ignore LSTM model files in the DataModelSongs directory
+dataModelsSongs
+
